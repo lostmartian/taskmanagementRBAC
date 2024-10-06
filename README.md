@@ -57,16 +57,12 @@ Run flask db init commands following after it only after deleting the database i
  ```
 ### Demo Users:
 
-*Admin*
-Username: admin
-Password: admin
+**Admin**
+- Username: admin Password: admin
 
-*Test users*
-Username: test2
-Password: test2
+**Test users**
+- Username: test2 Password: test2
 
-Username: test3
-Password: test3
+- Username: test3 Password: test3
 
-Username: testdemo
-Password: testdemo
+- Username: testdemo Password: testdemo
