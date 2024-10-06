@@ -28,6 +28,11 @@ This project is a task management system designed to help users create and manag
 - **SQLAlchemy**: An ORM (Object Relational Mapping) tool for interacting with the database
 - **SQLite**: For the database management system
 
+### FrontEnd and BackEnd Documentation
+
+ 1. [Frontend Doc](https://github.com/lostmartian/taskmanagementRBAC/tree/main/frontend#readme)
+ 2. [BackEnd Doc](https://github.com/lostmartian/taskmanagementRBAC/tree/main/backend#readme)
+
 ## Running the Project Locally  
 ### Prerequisites 
 Ensure you have the following installed on your machine: 
