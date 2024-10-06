@@ -14,7 +14,7 @@ This project is a task management system designed to help users create and manag
 
 ### Architecture
 
-![Architecture flow](https://raw.githubusercontent.com/lostmartian/taskmanagementRBAC/refs/heads/main/assets/design.png?token=GHSAT0AAAAAACOSNDXBW2A2JBGEY2XVHDOUZYCVGKA)
+![Architecture flow](https://github.com/lostmartian/taskmanagementRBAC/blob/main/assets/design.png?raw=true)
 ### Frontend
 - **React**: A JavaScript library for building user interfaces
 - **Material-UI**: A React UI framework for responsive and elegant design
