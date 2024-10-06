@@ -18,15 +18,15 @@ All the endpoints, except for user registration and login, require JWT-based aut
     "username": "string",
     "password": "string",
     "email": "string",
-    "role": "string"  # Can be 'owner', 'admin', etc.
+    "role": "string"
 }
 ```
 **Response**:
 ```json
-`{
+{
     "user_id": "int",
     "message": "User registered successfully!"
-}`
+}
 ```
 ### Login
 
@@ -35,18 +35,18 @@ All the endpoints, except for user registration and login, require JWT-based aut
 **Description**: Logs in a user and returns a JWT token.  
 **Request Body**:
 ```json
-`{
+{
     "username": "string",
     "password": "string"
-}` 
+}
 ```
 
 **Response**:
 ```json
-`{
+{
     "id": "int",
     "token": "string"
-}` 
+}
 ```
 
 ### Get Current User Information
@@ -56,12 +56,12 @@ All the endpoints, except for user registration and login, require JWT-based aut
 **Description**: Retrieves the information of the currently logged-in user.  
 **Response**:
 ```json
-`{
+{
     "id": "int",
     "username": "string",
     "email": "string",
     "role": "string"
-}` 
+}
 ```
 
 ### Create a New Task List
@@ -73,15 +73,15 @@ All the endpoints, except for user registration and login, require JWT-based aut
 ```json
 `{
     "name": "string"
-}` 
+}
 ```
 
 **Response**:
 ```json
-`{
+{
     "task_list_id": "int",
     "message": "Task list created!"
-}` 
+}
 ```
 
 ### Update a Task List
@@ -91,17 +91,17 @@ All the endpoints, except for user registration and login, require JWT-based aut
 **Description**: Updates an existing task list. Only the owner or an admin can update a task list.  
 **Request Body**:
 ```json
-`{
+{
     "name": "string"
-}` 
+}
 ```
 
 **Response**:
 ```json
-`{
+{
     "id": "int",
     "message": "Task list updated successfully!"
-}` 
+}
 ```
 
 ### Get User's Task Lists
@@ -111,7 +111,7 @@ All the endpoints, except for user registration and login, require JWT-based aut
 **Description**: Retrieves the task lists owned or assigned to the logged-in user.  
 **Response**:
 ```json
-`[
+[
     {
         "task_list_name": "string",
         "id": "int",
@@ -127,7 +127,7 @@ All the endpoints, except for user registration and login, require JWT-based aut
             }
         ]
     }
-]` 
+]
 ```
 
 ### Add a New Task
@@ -137,20 +137,20 @@ All the endpoints, except for user registration and login, require JWT-based aut
 **Description**: Adds a new task to a specific task list.  
 **Request Body**:
 ```json
-`{
+{
     "title": "string",
     "description": "string",
     "due_date": "string (YYYY-MM-DD HH:MM or YYYY-MM-DD HH:MM:SS)",
     "assigned_user_id": "int"
-}` 
+}
 ```
 
 **Response**:
 ```json
-`{
+{
     "message": "Task created successfully!",
     "task_id": "int"
-}` 
+}
 ```
 
 ### Update a Task
@@ -160,20 +160,20 @@ All the endpoints, except for user registration and login, require JWT-based aut
 **Description**: Updates a specific task. Only the task list owner or an admin can update the task.  
 **Request Body**:
 ```json
-`{
+{
     "title": "string",
     "description": "string",
     "due_date": "string (YYYY-MM-DD HH:MM or YYYY-MM-DD HH:MM:SS)",
     "assigned_user_id": "int",
     "status": "string"
-}` 
+}
 ```
 
 **Response**:
 ```json
-`{
+{
     "message": "Task updated successfully!"
-}` 
+}
 ```
 
 ### Update Task Status
@@ -183,15 +183,15 @@ All the endpoints, except for user registration and login, require JWT-based aut
 **Description**: Updates the status of a specific task.  
 **Request Body**:
 ```json
-`{
+{
     "status": "string"
-}` 
+}
 ```
 **Response**:
 ```json
-`{
+{
     "message": "Task status updated successfully!"
-}` 
+}
 ```
 ----------
 ## Error Codes
