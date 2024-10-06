@@ -71,7 +71,7 @@ All the endpoints, except for user registration and login, require JWT-based aut
 **Description**: Creates a new task list for the logged-in user.  
 **Request Body**:
 ```json
-`{
+{
     "name": "string"
 }
 ```

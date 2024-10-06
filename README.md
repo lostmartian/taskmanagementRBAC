@@ -55,3 +55,18 @@ Run flask db init commands following after it only after deleting the database i
  npm audit fix
  npm start
  ```
+### Demo Users:
+
+*Admin*
+Username: admin
+Password: admin
+
+*Test users*
+Username: test2
+Password: test2
+
+Username: test3
+Password: test3
+
+Username: testdemo
+Password: testdemo
