@@ -12,6 +12,7 @@ class User(db.Model):
     tasks_assigned = db.relationship(
         'Task', backref='assigned_user', lazy=True, foreign_keys='Task.assigned_user_id')
 
+    # Foreign key for tasks where the user created the task (created_by)
     tasks_created = db.relationship(
         'Task', backref='creator', lazy=True, foreign_keys='Task.creator_id')
 
@@ -36,6 +37,7 @@ class Task(db.Model):
     creator_id = db.Column(db.Integer, db.ForeignKey(
         'user.id'), nullable=False)  # The user who created the task
     task_list_id = db.Column(db.Integer, db.ForeignKey(
-        'task_list.id'), nullable=False)  # The task list this task belongs top
+        'task_list.id'), nullable=False)  # The task list this task belongs to
+    # Auto-set creation timestamp
     created_at = db.Column(db.DateTime, nullable=False,
                            default=db.func.current_timestamp())

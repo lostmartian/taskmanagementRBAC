@@ -31,7 +31,7 @@ def add_task(id):
         except ValueError:
             return jsonify({"message": "Invalid date format. Expected YYYY-MM-DD HH:MM or YYYY-MM-DD HH:MM:SS"}), 400
         
-    utc_time = due_date_mod.replace(tzinfo=timezone.ist)
+    utc_time = due_date_mod.replace(tzinfo=timezone.utc)
     local_time = utc_time.astimezone()
 
     # print(local_time)

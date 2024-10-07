@@ -31,7 +31,7 @@ def create_app():
 
     # Scheduler Setup
     scheduler.add_job(email_job,
-                      trigger="interval", minutes=1)  
+                      trigger="interval", minutes=10)  
     scheduler.start()
 
     # Register blueprints
