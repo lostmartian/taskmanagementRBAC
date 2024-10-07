@@ -39,14 +39,18 @@ Ensure you have the following installed on your machine:
 - Python 3.10
 - Node.js and npm 
 - ### Backend Setup  
-Run flask db init commands following after it only after deleting the database instance
+Run flask db init commands following after it only after deleting the database instance and migration folder. 
+If you do not delete them then you will be able to use the users that we have created as samples.
  ```bash 
  cd backend
- pip install -r requirements.txt
+ python3 -m venv venv
+ source venv/bin/activate
+ pip3 install -r requirements.txt
  flask db init
  flask db migrate
  flask db upgrade
  flask run
+
  ```
 - ### FrontEnd Setup
 ```bash 
